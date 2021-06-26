@@ -5,8 +5,6 @@ Invidual budget files are in their respective folders. Master files combine 2020
 
 Interactive visualizations:
 
-2020-2021
-https://public.flourish.studio/visualisation/2841995/
+2020-2021: https://public.flourish.studio/visualisation/2841995/
 
-2021-2022
-https://public.flourish.studio/visualisation/6533369/
+2021-2022: https://public.flourish.studio/visualisation/6533369/
