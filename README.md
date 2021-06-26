@@ -2,10 +2,11 @@ This repository scrapes data from federal budgets that are released as PDFs by t
 
 Invidual budget files are in their respective folders. Master files combine 2020 and 2021 budgets for comparison.
 
+**Note**: The files are generated using pattern recognition alogorithms, a lot of which had to fine tuned. The files can contain errors. If you come across some data issues, then please report them.
 
 ### Interactive visualizations:
 
-The interactive visualization is made in [Flourish](https://flourish.studio/), an online dataviz platform. Since this is all open-source, the visualizations can be duplicated and edited:
+The interactive visualizations are made in [Flourish](https://flourish.studio/), an online dataviz platform. Since this is all open-source, the visualizations can be duplicated and edited:
 
 **2020-2021:** https://public.flourish.studio/visualisation/2841995/
 
