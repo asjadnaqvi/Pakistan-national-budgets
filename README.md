@@ -2,7 +2,7 @@ This repository scrapes data from federal budgets that are released as PDFs by t
 
 Invidual budget files are in their respective folders. Master files combine 2020 and 2021 budgets for comparison.
 
-**Note**: The files are generated using pattern recognition scripts, a lot of which had to fine tuned. The files can contain errors. If you come across some data issues, then please report them.
+**Note**: The files are generated using pattern recognition scripts, a lot of which had to be fine tuned. The files can contain errors. If you come across some data issues, then please report them.
 
 ### Interactive visualizations:
 
