@@ -27,11 +27,11 @@ Invidual budget files are in their respective folders. Master files combine 2020
 | `ID6` | num | The 6th level budget category. |
 | `ID6_name` | str | The names of ID6. This is the highest disaggregated level.  | 
 | `level` | num | The level of the data disaggregation for `ID6`. Level 1 is the total for the `ID6` category. Level 2 adds up to level 1. Level 3 adds up to level 2. |
-| `budget<N>_posts_<N-1>` | num | The number of posts (jobs) in year **<N-1>** in budget of year **<N>**.  | 
-| `budget<N>_posts_<N>` | num | The number of posts (jobs) in year **<N>** in budget of year **<N>**.  | 
-| `budget<N>_<N-1>` | num | The value in PKR of item `ID6` `level` for year **<N-1>** given in budget of year **<N>**.  | 
-| `budget<N>_<N-1>_revised` | num | The revised value in PKR of item `ID6` `level` for year **<N-1>** given in budget of year **<N>**.  | 
-| `budget<N>_<N>` | num | The value in PKR of item `ID6` `level` for year **<N>** given in budget of year **<N>**. This is the value of the current budget.  | 
+| `budget<N>_posts_<N-1>` | num | The number of posts (jobs) in year **N-1** in budget year **N**.  | 
+| `budget<N>_posts_<N>` | num | The number of posts (jobs) in year **N** in budget year **N**.  | 
+| `budget<N>_<N-1>` | num | The value in PKR of item `ID6` `level` for year **N-1** given in budget year **N**.  | 
+| `budget<N>_<N-1>_revised` | num | The revised value in PKR of item `ID6` `level` for year **N-1** given in budget year **N**.  | 
+| `budget<N>_<N>` | num | The value in PKR of item `ID6` `level` for year **N** given in budget year **N**. This is the value of the current budget.  | 
 
 
 *Note:* When comparing the values across the years remember to deflate them using some  inflation index.
