@@ -46,6 +46,8 @@ The interactive visualizations are made in [Flourish](https://flourish.studio/),
 **2021-2022:** https://public.flourish.studio/visualisation/6533369/
 
 
+These visualizations use `ID6` `level` 1 data.
+
 <br />
 
 Screenshots:
