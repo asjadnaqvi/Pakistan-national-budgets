@@ -34,7 +34,7 @@ Invidual budget files are in their respective folders. Master files combine 2020
 | `budget<N>_<N>` | num | The value in PKR of item `ID6` `level` for year **<N>** given in budget of year **<N>**. This is the value of the current budget.  | 
 
 
-*Note:* When comparing the values across the years remember to deflate them based on inflation.
+*Note:* When comparing the values across the years remember to deflate them using some  inflation index.
 
 
 ## :bar_chart: Interactive visualizations:
