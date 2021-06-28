@@ -58,4 +58,4 @@ Screenshots:
 
 * 28 Jun 2021: Documentation added for the tables in the markdown. Page description improved considerably.
 * 26 Jun 2021: Budget for 2021-2022 is scrapped from PDFs. The scripts are improved to weed out the errors in data matching. Some `1D6` categories were being skipped since the columns were messed up. The other main issues was that entries with single columns were not being assigned to the correct column. While most fit a generic pattern, not all might end up in the correct column. This was the bulk of the fine tuning. These should be extremely few and should ONLY matter if analyzing the data at the highest level of disaggregation, i.e. `ID6`. Please report these if you find them.
-* Jul 2020: Budget for 2020-2021 is scrapped from PDFs. The core scripts were put in place to read the lines and order the data in categories. 
+* Jul 2020: Budget for 2020-2021 is scrapped from PDFs. The core scripts are put in place to sort and order the table entries. 
