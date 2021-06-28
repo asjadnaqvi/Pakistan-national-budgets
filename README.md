@@ -22,7 +22,7 @@ Invidual budget files are in their respective folders. Master files combine 2020
 | `ID5_name` | str | The names of ID5.  | 
 | `ID6` | num | The 6th level budget category. |
 | `ID6_name` | str | The names of ID6. This is the highest disaggregated level.  | 
-| `level` | num | The level of the data disaggregation for `ID6`. Level 2 adds up to 1. Level 3 adds up to 2. See ID6 for the details.  |
+| `level` | num | The level of the data disaggregation for `ID6`. Level 1 is the total for `ID6` category. Level 2 adds up to 1. Level 3 adds up to 2. See ID6 for the details.  |
 | `budget<N>_posts_<N-1>` | num | The number of posts in year **<N-1>** in budget of year **<N>**.  | 
 | `budget<N>_posts_<N>` | num | The number of posts in year **<N>** in budget of year **<N>**.  | 
 | `budget<N>_<N-1>` | num | The value in PKR of item `ID6` `level` for year **<N-1>** given in budget of year **<N>**.  | 
