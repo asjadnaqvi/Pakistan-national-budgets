@@ -14,8 +14,8 @@ Individual budget files are in their respective folders.
 | --- | --- | --- |
 | `year` | num | Year of the budget. E.g. 2021 represents the 2021-2022 budget. | 
 | `category` | str | **Current** or **Development** budget. | 
-| `ministry` | str | Ministry: serial number (Greek numbers). | 
-| `ministry_name` | str | Ministry: name. | 
+| `ministry` | str | Ministry serial number (Greek numbers). | 
+| `ministry_name` | str | Ministry name. | 
 | `dfg` | num | Demand for Grants: internal serial number. | 
 | `dfg_id` | str | Demand for Grants: official serial number. | 
 | `dfg_name` | str | Demand for Grants: official name. | 
@@ -52,7 +52,7 @@ These visualizations use `ID6` `level` 1 data.
 
 Screenshots:
 
-<img src="screenshot_2021.png" height="400" title="2021_2022">
+<img src="screenshot_2021.png" height="600" title="2021_2022">
 
 ## :pencil: Change log
 
