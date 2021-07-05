@@ -52,7 +52,7 @@ These visualizations use `ID6` `level` 1 data.
 
 Screenshots:
 
-<img src="screenshot_2021.png" height="600" title="2021_2022">
+<img src="screenshot_2021.png" height="800" title="2021_2022">
 
 ## :pencil: Change log
 
