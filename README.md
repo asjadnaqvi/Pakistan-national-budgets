@@ -52,9 +52,8 @@ The interactive visualizations are made in [Flourish](https://flourish.studio/),
 
 <img src="screenshot_2021.png" height="800" title="2021-2022">
 
-<img src="screenshot_2020.png" height="800" title="2020-2021">
 
-These visualizations use `ID6` `level` 1 data.
+The visualizations use `ID6` `level` 1 data.
 
 <br />
 
