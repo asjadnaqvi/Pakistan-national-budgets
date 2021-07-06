@@ -33,8 +33,9 @@ Individual budget files are in their respective folders.
 | `ID6_name` | str | The names of ID6. This is the highest disaggregated level.  | 
 | `level` | num | The level of the data disaggregation for `ID6`. Level 1 is the total for the `ID6` category. Level 2 adds up to level 1. Level 3 adds up to level 2. |
 | `posts_<N>` | num | The number of posts (jobs) in year **N**.  | 
-| `budget_<N>` | num | The value in PKR of item `ID6` `level` for year **N**. | 
-
+| `posts_<N>_revised` | num | The number of posts (jobs) revised in fiscal year **N**.  | 
+| `budget_<N>` | num | The value in PKR of item `ID6` `level` in fiscal year **N**. | 
+| `budget_<N>_revised` | num | The value in PKR of item `ID6` `level` revised in fiscal year **N**. | 
 
 *Note:* When comparing the values across the years remember to deflate them using some  inflation index.
 
@@ -44,6 +45,7 @@ Individual budget files are in their respective folders.
 The interactive visualizations are made in [Flourish](https://flourish.studio/), an online dataviz platform. Since this is all open-source, the visualizations can be duplicated and edited:
 
 **2021-2022:** https://public.flourish.studio/visualisation/6533369/
+**2020-2021:** https://public.flourish.studio/visualisation/2841995/
 
 
 These visualizations use `ID6` `level` 1 data.
@@ -52,10 +54,13 @@ These visualizations use `ID6` `level` 1 data.
 
 Screenshots:
 
-<img src="screenshot_2021.png" height="800" title="2021_2022">
+<img src="screenshot_2021.png" height="800" title="2021-2022">
+
+<img src="screenshot_2020.png" height="800" title="2020-2021">
 
 ## :pencil: Change log
 
+* 07 Jul 2021: Budget year 2020-2021 added. Minor fixes to categories. In order to merge the different budget years, a careful look at the sub-categories are needed. Especially if the category IDs are changing over time.
 * 06 Jul 2021: The format of the budgets have changed after they were approved in the Assembly. They no longer contain information on the previous year. I have redone 2021-22 budgets and have added the names of the ministries and the Demand for grant categories. This should give a better overall picture. The visualization for 2021-22 budget has also been upgraded. 2020-21 files have been removed for now and will be added back once the files are updated.
 * 28 Jun 2021: Documentation added for the tables in the markdown. Page description improved considerably.
 * 26 Jun 2021: Budget for 2021-2022 is scrapped from PDFs. The scripts are improved to weed out the errors in data matching. Some `1D6` categories were being skipped since the columns were messed up. The other main issues was that entries with single columns were not being assigned to the correct column. While most fit a generic pattern, not all might end up in the correct column. This was the bulk of the fine tuning. These should be extremely few and should ONLY matter if analyzing the data at the highest level of disaggregation, i.e. `ID6`. Please report these if you find them.
