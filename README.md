@@ -13,9 +13,10 @@ Individual budget files are in their respective folders.
 | Variable | Type | Description | 
 | --- | --- | --- |
 | `year` | num | Year of the budget. E.g. 2021 represents the 2021-2022 budget. | 
-| `category` | str | **Current** or **Development** budget. | 
+| `category` | num | **Current** or **Development** budget. | 
 | `ministry` | str | Ministry serial number (Greek numbers). | 
 | `ministry_name` | str | Ministry name. | 
+| `fund` | num | Fund category.  | 
 | `dfg` | num | Demand for Grants: internal serial number. | 
 | `dfg_id` | str | Demand for Grants: official serial number. | 
 | `dfg_name` | str | Demand for Grants: official name. | 
@@ -60,7 +61,7 @@ The visualizations use `ID6` `level` 1 data.
 
 ## :pencil: Change log
 
-* 07 Jul 2021: Budget year 2020-2021 added. Minor fixes to categories. In order to merge the different budget years, a careful look at the sub-categories are needed. Especially if the category IDs are changing over time.
+* 07 Jul 2021: Budget year 2020-2021 added. Fund categories added. Minor fixes to categories. In order to merge the different budget years, a careful look at the sub-categories are needed. Especially if the category IDs are changing over time. 
 * 06 Jul 2021: The format of the budgets have changed after they were approved in the Assembly. They no longer contain information on the previous year. I have redone 2021-22 budgets and have added the names of the ministries and the Demand for grant categories. This should give a better overall picture. The visualization for 2021-22 budget has also been upgraded. 2020-21 files have been removed for now and will be added back once the files are updated.
 * 28 Jun 2021: Documentation added for the tables in the markdown. Page description improved considerably.
 * 26 Jun 2021: Budget for 2021-2022 is scrapped from PDFs. The scripts are improved to weed out the errors in data matching. Some `1D6` categories were being skipped since the columns were messed up. The other main issues was that entries with single columns were not being assigned to the correct column. While most fit a generic pattern, not all might end up in the correct column. This was the bulk of the fine tuning. These should be extremely few and should ONLY matter if analyzing the data at the highest level of disaggregation, i.e. `ID6`. Please report these if you find them.
