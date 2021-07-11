@@ -1,4 +1,4 @@
-## :ledger: Background
+## Background
 
 This repository scrapes data from federal budgets that are released as PDFs by the [Ministry of Finance, Government of Pakistan](https://www.finance.gov.pk/)
 
@@ -8,7 +8,7 @@ Individual budget files are in their respective folders.
 
 
 
-## :floppy_disk: Description of the variables
+## Description of the variables
 
 | Variable | Type | Description | 
 | --- | --- | --- |
@@ -41,7 +41,10 @@ Individual budget files are in their respective folders.
 *Note:* When comparing the values across the years remember to deflate them using some  inflation index.
 
 
-## :bar_chart: Interactive visualizations:
+## Interactive visualizations:
+
+<div class="flourish-embed flourish-hierarchy" data-src="visualisation/6533369"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
 
 The interactive visualizations are made in [Flourish](https://flourish.studio/), an online dataviz platform. Since this is all open-source, the visualizations can be duplicated and edited:
 
@@ -49,17 +52,13 @@ The interactive visualizations are made in [Flourish](https://flourish.studio/),
 
 **2020-2021:** https://public.flourish.studio/visualisation/2841995/
 
-*Screenshots:*
-
-<img src="./figures/screenshot_2021.png" height="600" title="2021-2022">
-
 
 The visualizations use `ID6` `level` 1 data.
 
 <br />
 
 
-## :pencil: Change log
+## Change log
 
 * 07 Jul 2021: Budget year 2020-2021 added. Fund categories added. Minor fixes to categories. In order to merge the different budget years, a careful look at the sub-categories are needed. Especially if the category IDs are changing over time. 
 * 06 Jul 2021: The format of the budgets have changed after they were approved in the Assembly. They no longer contain information on the previous year. I have redone 2021-22 budgets and have added the names of the ministries and the Demand for grant categories. This should give a better overall picture. The visualization for 2021-22 budget has also been upgraded. 2020-21 files have been removed for now and will be added back once the files are updated.
