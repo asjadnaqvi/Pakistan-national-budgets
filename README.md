@@ -50,11 +50,7 @@ Individual budget files are in their respective folders.
 The visualizations use `ID6` `level` 1 data.
 
 <br />
-The interactive visualizations are made in [Flourish](https://flourish.studio/), an online dataviz platform. Since this is all open-source, the visualizations can be duplicated and edited:
-
-[**2021-2022:**](https://public.flourish.studio/visualisation/6533369/)
-
-[**2020-2021:**](https://public.flourish.studio/visualisation/2841995/)
+The interactive visualizations are made in [Flourish](https://flourish.studio/), an online dataviz platform. Since this is all open-source, the visualizations can be viewed and duplicated here: [**2021-2022**](https://public.flourish.studio/visualisation/6533369/) and [**2020-2021**](https://public.flourish.studio/visualisation/2841995/)
 
 
 
