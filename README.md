@@ -1,3 +1,11 @@
+# Pakistan Budgets
+
+The follow years are available:
+*   [2020 - 2021](./2020_2021)
+*   [2021 - 2022](./2021_2022)
+*   [2022 - 2023](./2022_2023)
+
+
 ## Background
 
 This repository scrapes data from federal budgets that are released as PDFs by the [Ministry of Finance, Government of Pakistan](https://www.finance.gov.pk/)
@@ -5,7 +13,6 @@ This repository scrapes data from federal budgets that are released as PDFs by t
 Individual budget files are in their respective folders. 
 
 *Note*: The files are generated using pattern recognition scripts, a lot of which had to be fine tuned. The files can contain errors. If you come across some data issues, then please report them as soon as possible.
-
 
 
 ## Description of the variables
@@ -50,7 +57,10 @@ Individual budget files are in their respective folders.
 The visualizations use `ID6` `level` 1 data.
 
 <br />
+
 The interactive visualizations are made in [Flourish](https://flourish.studio/), an online dataviz platform. Since this is all open-source, the visualizations can be viewed and duplicated here: 
+
+[2022-23](https://public.flourish.studio/visualisation/10531934/) 
 
 [2021-22](https://public.flourish.studio/visualisation/6533369/) 
 
@@ -60,8 +70,8 @@ The interactive visualizations are made in [Flourish](https://flourish.studio/),
 
 
 ## Change log
-
-* 07 Jul 2021: Budget year 2020-2021 added. Fund categories added. Minor fixes to categories. In order to merge the different budget years, a careful look at the sub-categories are needed. Especially if the category IDs are changing over time. 
+* 03 Jul 2022: Budget for the year 2022-2023 added.
+* 07 Jul 2021: Budget for the year 2020-2021 added. Fund categories added. Minor fixes to categories. In order to merge the different budget years, a careful look at the sub-categories are needed. Especially if the category IDs are changing over time. 
 * 06 Jul 2021: The format of the budgets have changed after they were approved in the Assembly. They no longer contain information on the previous year. I have redone 2021-22 budgets and have added the names of the ministries and the Demand for grant categories. This should give a better overall picture. The visualization for 2021-22 budget has also been upgraded. 2020-21 files have been removed for now and will be added back once the files are updated.
 * 28 Jun 2021: Documentation added for the tables in the markdown. Page description improved considerably.
 * 26 Jun 2021: Budget for 2021-2022 is scrapped from PDFs. The scripts are improved to weed out the errors in data matching. Some `1D6` categories were being skipped since the columns were messed up. The other main issues was that entries with single columns were not being assigned to the correct column. While most fit a generic pattern, not all might end up in the correct column. This was the bulk of the fine tuning. These should be extremely few and should ONLY matter if analyzing the data at the highest level of disaggregation, i.e. `ID6`. Please report these if you find them.
