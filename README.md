@@ -50,13 +50,11 @@ Individual budget files are in their respective folders.
 
 ## Interactive visualizations:
 
-<div class="flourish-embed flourish-hierarchy" data-src="visualisation/6533369"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+<div class="flourish-embed flourish-hierarchy" data-src="visualisation/10531934"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
 
-<br />
 The visualizations use `ID6` `level` 1 data.
 
-<br />
 
 The interactive visualizations are made in [Flourish](https://flourish.studio/), an online dataviz platform. Since this is all open-source, the visualizations can be viewed and duplicated here: 
 
