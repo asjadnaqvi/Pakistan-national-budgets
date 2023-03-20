@@ -12,7 +12,9 @@ This repository scrapes data from federal budgets that are released as PDFs by t
 
 Individual budget files are in their respective folders. 
 
-*Note*: The files are generated using pattern recognition scripts, a lot of which had to be fine tuned. The files can contain errors. If you come across some data issues, then please report them as soon as possible.
+*Note*: The files are generated using pattern recognition scripts which had to be fine tuned over several iterations. The files might contain errors. If you come across data issues, then please report them as soon as possible. This is a hobby project to improve my data scraping skills. If you intend to use this data for research and policy work, then please double check the raw numbers with the original source files. Also note that budget files are intermittently updated and the data reflects the version used at the time of scraping the data. If you would like me to update the files to newer versions, then feel free to open an [Issue](https://github.com/asjadnaqvi/Pakistan-national-budgets/issues).
+
+
 
 
 ## Description of the variables
