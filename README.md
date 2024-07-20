@@ -1,9 +1,8 @@
 # Pakistan Budgets
 
 The follow years are available:
-*   [2020 - 2021](./2020_2021)
-*   [2021 - 2022](./2021_2022)
-*   [2022 - 2023](./2022_2023)
+*   [2023 - 2024](./2023_2024)
+*   [2024 - 2025](./2024_2025)
 
 
 ## Background
@@ -12,7 +11,9 @@ This repository scrapes data from federal budgets that are released as PDFs by t
 
 Individual budget files are in their respective folders. 
 
-*Disclaimer*: The files are generated using pattern recognition scripts which had to be fine tuned over several iterations. The files might contain errors. If you come across data issues, then please report them as soon as possible. This is a hobby project to improve my data scraping skills. If you intend to use this data for research and policy work, then please double check the raw numbers with the original source files. Also note that budget files are intermittently updated and the data reflects the version used at the time of scraping the data. If you would like me to update the files to newer versions, then feel free to open an [Issue](https://github.com/asjadnaqvi/Pakistan-national-budgets/issues).
+Note that numbers are added up from the lowest category. If the lowest category is missing in the published budgets, then this will automatically be missing from the tables. These entries are relatively few though and are added as budget files get updated.
+
+*Disclaimer*: The files are generated using pattern recognition scripts which had to be fine tuned over several iterations. The files can contain errors. If you come across data issues, then please report them as soon as possible. This is a hobby project to improve my data scraping skills. Therefore, if you intend to use this data for research and policy work, please double check the original source files. Also note that budget files are intermittently updated so the data might only reflect the version downloaded at the time of scraping the data. A full cleaning is possible but this requires a proper fully-funded project. 
 
 
 
@@ -21,55 +22,37 @@ Individual budget files are in their respective folders.
 
 | Variable | Type | Description | 
 | --- | --- | --- |
-| `year` | num | Year of the budget. E.g. 2021 represents the 2021-2022 budget. | 
-| `category` | num | **Current** or **Development** budget. | 
-| `ministry` | str | Ministry serial number (Greek numbers). | 
-| `ministry_name` | str | Ministry name. | 
-| `fund` | num | Fund category.  | 
-| `dfg` | num | Demand for Grants: internal serial number. | 
-| `dfg_id` | str | Demand for Grants: official serial number. | 
-| `dfg_name` | str | Demand for Grants: official name. | 
-| `ID1` | num | The 1st level budget category. Contains ten values.  | 
-| `ID1_name` | str | The names of ID1.  | 
-| `ID2` | num | The 2nd level budget category. |
-| `ID2_name` | str | The names of ID2.  | 
-| `ID3` | num | The 3rd level budget category. |
-| `ID3_name` | str | The names of ID3.  | 
-| `ID4` | num | The 4th level budget category. |
-| `ID4_name` | str | The names of ID4.  | 
-| `ID5` | num | The 5th level budget category. |
-| `ID5_name` | str | The names of ID5.  | 
-| `ID6` | num | The 6th level budget category. |
-| `ID6_name` | str | The names of ID6. This is the highest disaggregated level.  | 
-| `level` | num | The level of the data disaggregation for `ID6`. Level 1 is the total for the `ID6` category. Level 2 adds up to level 1. Level 3 adds up to level 2. |
+| `fund` | num | Name of the fund e.g. current expenditure, capital expenditure, consolidated funds etc. | 
+| `ministry_name` | str | Ministry name | 
+| `division_name` | str | Name of the division | 
+| `ID1_name` | str | Name of the first level  | 
+| `ID2_name` | str | Name of the second level   | 
+| `ID3_name` | str | Name of the third level   | 
+| `ID4_name` | str | Name of the fourth level   | 
+| `ID5_name` | str | Name of the fifth level   | 
+| `posts_<N-1>` | num | The number of posts (jobs) in year **N-1**.  | 
+| `posts_<N-1>_revised` | num | The number of posts (jobs) revised in fiscal year **N-1**.  | 
 | `posts_<N>` | num | The number of posts (jobs) in year **N**.  | 
 | `posts_<N>_revised` | num | The number of posts (jobs) revised in fiscal year **N**.  | 
+| `budget_<N-1>` | num | The value in PKR of item `ID6` `level` in fiscal year **N-1**. | 
+| `budget_<N-1>_revised` | num | The value in PKR of item `ID6` `level` revised in fiscal year **N-1**. | 
 | `budget_<N>` | num | The value in PKR of item `ID6` `level` in fiscal year **N**. | 
-| `budget_<N>_revised` | num | The value in PKR of item `ID6` `level` revised in fiscal year **N**. | 
-
-*Note:* When comparing the values across the years remember to deflate them using some  inflation index.
 
 
-## Interactive visualizations:
 
-<div class="flourish-embed flourish-hierarchy" data-src="visualisation/10531934"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-
-
-The visualizations use `ID6` `level` 1 data.
+## Interactive visualizations
 
 
-The interactive visualizations are made in [Flourish](https://flourish.studio/), an online dataviz platform. Since this is all open-source, the visualizations can be viewed and duplicated here: 
+The interactive visualizations can be viewed here: 
 
-[2022-23](https://public.flourish.studio/visualisation/10531934/) 
+[2024-25(https://public.flourish.studio/visualisation/18741763/) 
 
-[2021-22](https://public.flourish.studio/visualisation/6533369/) 
-
-[2020-21](https://public.flourish.studio/visualisation/2841995/)
-
+[2023-24](https://public.flourish.studio/visualisation/14291446/) 
 
 
 
 ## Change log
+* 20 Jul 2024: Budgets for FY2023 and FY2024 added. Previous years removed due to a cleaning issue. Might be added later.
 * 03 Jul 2022: Budget for the year 2022-2023 added.
 * 07 Jul 2021: Budget for the year 2020-2021 added. Fund categories added. Minor fixes to categories. In order to merge the different budget years, a careful look at the sub-categories are needed. Especially if the category IDs are changing over time. 
 * 06 Jul 2021: The format of the budgets have changed after they were approved in the Assembly. They no longer contain information on the previous year. I have redone 2021-22 budgets and have added the names of the ministries and the Demand for grant categories. This should give a better overall picture. The visualization for 2021-22 budget has also been upgraded. 2020-21 files have been removed for now and will be added back once the files are updated.
