@@ -1,6 +1,12 @@
 # Pakistan Budgets
 
-The follow years are available:
+The interactive visualizations can be viewed here: 
+
+[2024-25](https://public.flourish.studio/visualisation/18741763/) 
+[2023-24](https://public.flourish.studio/visualisation/14291446/) 
+
+
+and the partial data files can be downloaded here:
 *   [2023 - 2024](./2023_2024)
 *   [2024 - 2025](./2024_2025)
 
@@ -43,11 +49,7 @@ Note that numbers are added up from the lowest category. If the lowest category 
 ## Interactive visualizations
 
 
-The interactive visualizations can be viewed here: 
 
-[2024-25(https://public.flourish.studio/visualisation/18741763/) 
-
-[2023-24](https://public.flourish.studio/visualisation/14291446/) 
 
 
 
