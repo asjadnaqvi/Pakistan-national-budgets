@@ -39,7 +39,6 @@ Note that numbers are added up from the lowest category. If the lowest category 
 | `posts_<N-1>` | num | The number of posts (jobs) in year **N-1**.  | 
 | `posts_<N-1>_revised` | num | The number of posts (jobs) revised in fiscal year **N-1**.  | 
 | `posts_<N>` | num | The number of posts (jobs) in year **N**.  | 
-| `posts_<N>_revised` | num | The number of posts (jobs) revised in fiscal year **N**.  | 
 | `budget_<N-1>` | num | The value in PKR of item `ID6` `level` in fiscal year **N-1**. | 
 | `budget_<N-1>_revised` | num | The value in PKR of item `ID6` `level` revised in fiscal year **N-1**. | 
 | `budget_<N>` | num | The value in PKR of item `ID6` `level` in fiscal year **N**. | 
