@@ -18,7 +18,9 @@ This repository scrapes data from federal budgets that are released as PDFs by t
 
 Individual budget files are in their respective folders. 
 
-Note that numbers are added up from the lowest category. If the lowest category is missing in the published budgets, then this will automatically be missing from the tables. These entries are relatively few though and are added as budget files get updated.
+Note that numbers are added up from the lowest `ID6` category. If the lowest category is missing in the published budgets, then this will be automatically missing from the tables. These entries are relatively few though and are updated as the budget files are revised. 
+
+Also note that actual spending can be different than the allocated amount. This can be checked in budget files which also provide allocation and revised numbers for *(N-1)* fiscal year.
 
 *Disclaimer*: The files are generated using pattern recognition scripts which had to be fine tuned over several iterations. The files can contain errors. If you come across data issues, then please report them as soon as possible. This is a hobby project to improve my data scraping skills. Therefore, if you intend to use this data for research and policy work, please double check the original source files. Also note that budget files are intermittently updated so the data might only reflect the version downloaded at the time of scraping the data. A full cleaning is possible but this requires a proper fully-funded project. 
 
@@ -37,18 +39,12 @@ Note that numbers are added up from the lowest category. If the lowest category 
 | `ID3_name` | str | Name of the third level   | 
 | `ID4_name` | str | Name of the fourth level   | 
 | `ID5_name` | str | Name of the fifth level   | 
+| `ID6_name` | str | Name of the sixth (lowest) level   | 
 | `posts_<N-1>` | num | The number of posts (jobs) in year **N-1**.  | 
-| `posts_<N-1>_revised` | num | The number of posts (jobs) revised in fiscal year **N-1**.  | 
 | `posts_<N>` | num | The number of posts (jobs) in year **N**.  | 
-| `budget_<N-1>` | num | The value in PKR of item `ID6` `level` in fiscal year **N-1**. | 
-| `budget_<N-1>_revised` | num | The value in PKR of item `ID6` `level` revised in fiscal year **N-1**. | 
-| `budget_<N>` | num | The value in PKR of item `ID6` `level` in fiscal year **N**. | 
-
-
-
-## Interactive visualizations
-
-
+| `budget_<N-1>` | num | The value in PKR of item `ID6` in fiscal year **N-1**. | 
+| `budget_<N-1>_revised` | num | The value in PKR of item `ID6` revised in fiscal year **N-1**. | 
+| `budget_<N>` | num | The value in PKR of item `ID6` in fiscal year **N**. | 
 
 
 
