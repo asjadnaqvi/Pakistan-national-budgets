@@ -50,6 +50,7 @@ Also note that actual spending can be different than the allocated amount. This 
 
 
 ## Change log
+* 22 Jul 2024: Homogenization of ministry and division names in the FY2024 file. Name misalignments were resulting in wrong and/or multiple ministry-division mappings.
 * 20 Jul 2024: Budgets for FY2023 and FY2024 added. Previous years removed due to a cleaning issue. Might be added later.
 * 03 Jul 2022: Budget for the year 2022-2023 added.
 * 07 Jul 2021: Budget for the year 2020-2021 added. Fund categories added. Minor fixes to categories. In order to merge the different budget years, a careful look at the sub-categories are needed. Especially if the category IDs are changing over time. 
